@@ -1,4 +1,4 @@
-import { FETCH_BOOKS, ADD_BOOK, EDIT_BOOK, DELETE_BOOK } from "./actionTypes";
+import { FETCH_BOOKS, ADD_BOOK, DELETE_BOOK } from "./actionTypes";
 
 import { initialState } from "./initialState";
 

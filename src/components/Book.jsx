@@ -2,7 +2,6 @@ import React from "react";
 import Star from "./Star";
 import { useDispatch } from "react-redux";
 import deleteFromServer from "../redux/thunk/deleteBook";
-import { update } from "../redux/BookFeature/actions";
 
 export default function Book({ bookData }) {
    const dispatch = useDispatch();
@@ -17,8 +16,7 @@ export default function Book({ bookData }) {
    };
 
    const editBookInfo = (id) => {
-      console.log(id);
-      dispatch(update(bookData));
+      console.log("hello", id);
    };
    return (
       <>

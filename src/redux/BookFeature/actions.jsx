@@ -1,4 +1,4 @@
-import { FETCH_BOOKS, ADD_BOOK, EDIT_BOOK, DELETE_BOOK } from "./actionTypes";
+import { FETCH_BOOKS, ADD_BOOK, DELETE_BOOK } from "./actionTypes";
 
 export const fetchBooksFromServer = (booksFromServer) => {
    return {
@@ -18,20 +18,6 @@ export const addBook = (bookData) => {
          rating: bookData.rating,
          featured: bookData.featured,
       },
-   };
-};
-
-export const update = (data) => {
-   return {
-      type: EDIT_BOOK,
-      payload: data,
-   };
-};
-
-export const editBook = (book) => {
-   return {
-      type: EDIT_BOOK,
-      payload: book,
    };
 };
 
